@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order detail page</title>
+</head>
+<body>
+<h1>Order Detail:</h1>
+
+<h4>Product Name - <span id="productName"></span></h4>
+<h4>Quantity - <span id="qty"></span></h4>
+<h4>Product Price - Rs <span id="productPrice"></span></h4>
+<h4>Ordered Date - <span id="orderDate"></span></h4>
+<h4>Order Amount - Rs <span id="totalAmt"></span></h4>
+<h4>Seller - <span id="seller"></span></h4>
+<h4>Current Status - <span id="status"></span></h4>
+
+<div style="display: inline-flex; justify-content: space-between; align-items: center;">
+
+    <h3>Change order status : </h3>
+
+    <select id="orderStatus">
+        <option value="shipped">Shipped</option>
+        <option value="out_For_Delivery">Out For Delivery</option>
+        <option value="Delivered">Delivered</option>
+        <option value="cancelled">Cancelled</option>
+    </select>
+
+    <button id="changeOrderStatus">Change</button>
+</div>
+
+<h5>Order Status History:</h5>
+<ul id="orderStatusHistory"></ul>
+</body>
+<script src="orderdetailpage.js"></script>
+</html>
